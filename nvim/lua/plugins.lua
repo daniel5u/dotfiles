@@ -276,10 +276,7 @@ vim.pack.add({
 
 require("conform").setup({
     formatters_by_ft = {
-        lua = { "stylua" },
-
         python = { "isort", "black" },
-
         javascript = { "prettier" },
         typescript = { "prettier" },
         javascriptreact = { "prettier" },
@@ -287,6 +284,9 @@ require("conform").setup({
         json = { "prettier" },
         html = { "prettier" },
         css = { "prettier" },
+        lua = { "luaformatter" },
+        yaml = { "yamlfix" },
+        bash = { "beautysh" },
 
         ["*"] = { "codespell" },
     },
@@ -341,3 +341,37 @@ require("trouble").setup({
 
 -- 快捷键推荐
 vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics (Trouble)" })
+
+-- Automatic Mason package install & Update
+vim.pack.add({ { src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" } })
+
+require("mason-tool-installer").setup(
+    {
+        ensure_installed = {
+            "deno",
+            "rust-analyzer",
+            "tree-sitter-cli",
+            "ty",
+            "astro-language-server",
+            "black",
+            "isort",
+            "bash-debug-adapter",
+            "emmet-language-server",
+            "gitui",
+            "lua-language-server",
+            "prettier",
+            "texlab",
+            "tinymist",
+            "typescript-language-server",
+            "luaformatter",
+            "yamlfix",
+            "beautysh",
+        },
+
+        run_on_start = true,
+
+        auto_update = false,
+
+        start_delay = 3000,
+    }
+)

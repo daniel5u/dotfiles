@@ -4,6 +4,10 @@
       "rev": "e30b7f2008e52442154b66f7c519bfd2f1e32acb",
       "src": "https://github.com/numToStr/Comment.nvim"
     },
+    "accelerated-jk": {
+      "rev": "156c5158b72059404f6b8aaf15b59f87dd0aaa88",
+      "src": "https://github.com/rhysd/accelerated-jk"
+    },
     "blink.cmp": {
       "rev": "b19413d214068f316c78978b08264ed1c41830ec",
       "src": "https://github.com/saghen/blink.cmp",
@@ -25,6 +29,10 @@
       "rev": "a04ad0dbc725134edbee3a5eea29290976695357",
       "src": "https://github.com/kdheepak/lazygit.nvim.git"
     },
+    "mason-tool-installer.nvim": {
+      "rev": "443f1ef8b5e6bf47045cb2217b6f748a223cf7dc",
+      "src": "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim"
+    },
     "mason.nvim": {
       "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
       "src": "https://github.com/mason-org/mason.nvim"
@@ -32,6 +40,22 @@
     "material.nvim": {
       "rev": "52c121551ffbf7b8f25bed3ef5878e5d6896c786",
       "src": "https://github.com/marko-cerovac/material.nvim.git"
+    },
+    "mini.completion": {
+      "rev": "4d451f82f193f6751719935a63d16ccb79a76e0b",
+      "src": "https://github.com/nvim-mini/mini.completion"
+    },
+    "mini.icons": {
+      "rev": "efc85e42262cd0c9e1fdbf806c25cb0be6de115c",
+      "src": "https://github.com/nvim-mini/mini.icons"
+    },
+    "mini.pairs": {
+      "rev": "d5a29b6254dad07757832db505ea5aeab9aad43a",
+      "src": "https://github.com/nvim-mini/mini.pairs"
+    },
+    "mini.pick": {
+      "rev": "8cb40ee55dd156957b1116eded6135e6aeaa078b",
+      "src": "https://github.com/nvim-mini/mini.pick"
     },
     "nvim-autopairs": {
       "rev": "c2a0dd0d931d0fb07665e1fedb1ea688da3b80b4",
